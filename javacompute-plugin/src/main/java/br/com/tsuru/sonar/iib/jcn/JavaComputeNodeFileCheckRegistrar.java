@@ -27,6 +27,6 @@ public class JavaComputeNodeFileCheckRegistrar implements CheckRegistrar {
    * Lists all the checks provided by the plugin
    */
   public static Class<? extends JavaCheck>[] checkClasses() {
-    return new Class[] {JavaComputeNodeFieldCheck.class};
+    return new Class[] {JavaComputeNodeFieldCheck.class,AvoidCloseJDBCConnectionCheck.class};
   }
 }
