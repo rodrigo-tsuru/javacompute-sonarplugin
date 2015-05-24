@@ -1,6 +1,8 @@
 
 package br.com.tsuru.sonar.iib.jcn;
 
+import org.sonar.java.checks.SystemExitCalledCheck;
+import org.sonar.java.checks.SystemOutOrErrUsageCheck;
 import org.sonar.plugins.java.api.CheckRegistrar;
 import org.sonar.plugins.java.api.JavaCheck;
 
@@ -27,6 +29,6 @@ public class JavaComputeNodeFileCheckRegistrar implements CheckRegistrar {
    * Lists all the checks provided by the plugin
    */
   public static Class<? extends JavaCheck>[] checkClasses() {
-    return new Class[] {JavaComputeNodeFieldCheck.class,AvoidCloseJDBCConnectionCheck.class};
+    return new Class[] {JavaComputeNodeFieldCheck.class,AvoidCloseJDBCConnectionCheck.class,SystemExitCalledCheck.class,SystemOutOrErrUsageCheck.class};
   }
 }
