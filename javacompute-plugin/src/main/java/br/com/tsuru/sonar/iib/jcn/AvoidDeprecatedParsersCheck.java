@@ -22,7 +22,7 @@ import com.google.common.collect.ImmutableList;
 		  key = "JCN0004",
 		  name = "Avoid using deprecated parsers",
 		  tags = {"deprecated", "performance"},
-		  priority = Priority.CRITICAL)
+		  priority = Priority.MINOR)
 		@ActivatedByDefault
 		@SqaleSubCharacteristic(RulesDefinition.SubCharacteristics.CPU_EFFICIENCY)
 		@SqaleConstantRemediation("5min")
